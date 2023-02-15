@@ -11,7 +11,7 @@ const Layout = () => (
             <GlobalStyle /> 
             <NavLinkStyled to="/">LOGO</NavLinkStyled>   
             <NavLinkStyled to="/">HELP</NavLinkStyled>
-            <NavLinkStyled to="/movies">ASK FOR HELP</NavLinkStyled>
+            <NavLinkStyled to="/movies">ASK FOR HELP HERE </NavLinkStyled>
         </nav>
     </LayoutHeader>    
         <Container>  
