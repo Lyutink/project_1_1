@@ -10,8 +10,8 @@ const Layout = () => (
         <nav>
             <GlobalStyle /> 
             <NavLinkStyled to="/">LOGO</NavLinkStyled>   
-            <NavLinkStyled to="/">Home</NavLinkStyled>
-            <NavLinkStyled to="/movies">Movies</NavLinkStyled>
+            <NavLinkStyled to="/">HELP</NavLinkStyled>
+            <NavLinkStyled to="/movies">ASK FOR HELP</NavLinkStyled>
         </nav>
     </LayoutHeader>    
         <Container>  
