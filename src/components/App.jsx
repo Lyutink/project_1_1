@@ -1,7 +1,7 @@
 import { lazy} from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 
-import Layout from "components/Layout/Layout";
+import Layout from "../Layout";
 
 const loader = componentName => {
   return lazy(() =>

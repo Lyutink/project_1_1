@@ -1,25 +1,31 @@
 import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
-import { GlobalStyle } from "components/GlobalStyle";
+//import { GlobalStyle } from "components/GlobalStyle";
 import { Toaster } from 'react-hot-toast';
-import { NavLinkStyled, LayoutHeader, Container } from "./Layout.styled";
+import { Header } from '../components/Header'
+import { Container } from "components/Container";
+//import { NavLinkStyled, LayoutHeader, Container } from "./Layout.styled";
+import { Main } from "./Layout.styled";
 
 const Layout = () => (
     <>
-    <LayoutHeader>   
+        <Header/>
+    {/* <LayoutHeader>   
         <nav>
             <GlobalStyle /> 
             <NavLinkStyled to="/">LOGO</NavLinkStyled>   
             <NavLinkStyled to="/">HELP</NavLinkStyled>
             <NavLinkStyled to="/movies">ASK FOR HELP HERE </NavLinkStyled>
         </nav>
-    </LayoutHeader>    
-        <Container>  
+    </LayoutHeader>     */}
+        <Main>
+          <Container>  
             <Suspense fallback="">   
                 <Outlet /> 
             </Suspense>     
             <Toaster/>
-    </Container>         
+            </Container>    
+        </Main>        
     </>    
 );
 
