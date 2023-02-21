@@ -10,7 +10,9 @@ const loader = componentName => {
     })));
 };
 
-const HomePage = loader('HomePage');
+//const HomePage = loader('HomePage');
+//const MainPage = loader('MainPage');
+const MainPage = lazy(() => import('../pages/MainPage'))
 const MoviesPage = loader('MoviesPage');
 const MovieDetailsPage = loader('MovieDetailsPage');
 const Cast = loader('Cast');
@@ -28,7 +30,7 @@ export default function App  () {
     //<Suspense fallback=""> перенесла в Layout
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<HomePage />} />
+        <Route index element={<MainPage />} />
         <Route path="movies" element={<MoviesPage/>} />
         <Route path="movies/:movieId" element={<MovieDetailsPage/>}>
           <Route path="cast" element={<Cast/>}/>
