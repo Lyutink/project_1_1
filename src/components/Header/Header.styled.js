@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import blue_sky from '../../assets/images/bg-pictures/blue-sky.png';
 
 export const NavLinkStyled = styled(NavLink)`
   display: inline-block;
@@ -20,10 +21,14 @@ export const HeaderStyled = styled.header`
   top: 0; */
   z-index: 100;
   width: 100%;
+  height: 150px;
   position: sticky;
   top: 0;
   border-bottom: 1px solid #2a363b;
-  background-color: #c1eafc;
+  background-image: url(${blue_sky});
+  //background-size: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
 `;
 /////// для заставки хедера
 //   max-width: 100%;
